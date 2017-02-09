@@ -70,5 +70,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "Day3Example1.cls": {
+        "id": "01p4100000H6wkhAAB",
+        "name": "Day3Example1",
+        "createdDate": "2017-02-09T22:25:07.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-09T23:40:44.000+0000",
+        "fullName": "Day3Example1",
+        "fileName": "unpackaged/classes/Day3Example1.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
