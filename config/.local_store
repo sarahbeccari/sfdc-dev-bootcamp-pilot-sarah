@@ -1,0 +1,72 @@
+{
+    "StringArrayTest.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-01-23T20:36:34.000Z",
+        "fileName": "unpackaged/classes/StringArrayTest.cls",
+        "fullName": "StringArrayTest",
+        "id": "01p4100000GCS5WAAX",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-01-23T20:46:38.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day2Emample2.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-08T23:13:24.000Z",
+        "fileName": "unpackaged/classes/Day2Emample2.cls",
+        "fullName": "Day2Emample2",
+        "id": "01p4100000H6jPTAAZ",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-08T23:13:24.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "EmailManager.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-01-23T20:22:53.000Z",
+        "fileName": "unpackaged/classes/EmailManager.cls",
+        "fullName": "EmailManager",
+        "id": "01p4100000GCRicAAH",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-01-23T20:32:44.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day2Emample3.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-08T23:15:56.000Z",
+        "fileName": "unpackaged/classes/Day2Emample3.cls",
+        "fullName": "Day2Emample3",
+        "id": "01p4100000H6jPiAAJ",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-08T23:20:33.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day2Example1.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-08T23:11:05.000Z",
+        "fileName": "unpackaged/classes/Day2Example1.cls",
+        "fullName": "Day2Example1",
+        "id": "01p4100000H6jOzAAJ",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-08T23:11:05.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    }
+}

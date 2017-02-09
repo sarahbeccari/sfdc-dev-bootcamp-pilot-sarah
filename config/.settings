@@ -1,0 +1,17 @@
+{
+    "projectName": "apex-developer",
+    "username": "sarah.beccari@atginfo.devbootcamp.com",
+    "id": "d66ac420-e4df-11e6-bb29-4548c3f8b248",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na35.salesforce.com",
+    "workspace": "C:\\Users\\BeccariSarah\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
