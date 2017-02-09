@@ -42,15 +42,17 @@
         "mmState": "clean"
     },
     "Day2Emample3.cls": {
-        "createdById": "00541000002Jj4IAAS",
-        "createdByName": "Sarah Beccari",
-        "createdDate": "2017-02-08T23:15:56.000Z",
-        "fileName": "unpackaged/classes/Day2Emample3.cls",
-        "fullName": "Day2Emample3",
         "id": "01p4100000H6jPiAAJ",
+        "name": "Day2Emample3",
+        "createdDate": "2017-02-08T23:15:56.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
         "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-09T00:19:30.000+0000",
+        "fullName": "Day2Emample3",
+        "fileName": "unpackaged/classes/Day2Emample3.cls",
+        "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
-        "lastModifiedDate": "2017-02-08T23:20:33.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
