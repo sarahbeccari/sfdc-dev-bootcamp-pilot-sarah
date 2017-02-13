@@ -100,15 +100,17 @@
         "mmState": "clean"
     },
     "Day3Assingment1.cls": {
-        "createdById": "00541000002Jj4IAAS",
-        "createdByName": "Sarah Beccari",
-        "createdDate": "2017-02-10T00:14:29.000Z",
-        "fileName": "unpackaged/classes/Day3Assingment1.cls",
-        "fullName": "Day3Assingment1",
         "id": "01p4100000H6ynJAAR",
+        "name": "Day3Assingment1",
+        "createdDate": "2017-02-10T00:14:29.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
         "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-13T23:45:54.000+0000",
+        "fullName": "Day3Assingment1",
+        "fileName": "unpackaged/classes/Day3Assingment1.cls",
+        "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
-        "lastModifiedDate": "2017-02-10T18:18:06.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

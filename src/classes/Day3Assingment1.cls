@@ -1,3 +1,15 @@
+
+/**
+* @author Sarah Beccari sarah.beccari@atginfo.com
+*
+* Creates 10 contacts and 10 accounts
+************* CHANGE LOG ******
+* 2017-02-09	Sarah Beccari	Created Execute, CreateAccount, CreateContact methods
+* 2017-02-13	Sarah Beccari	added notes
+*
+*/
+
+
 public with sharing class Day3Assingment1 {
 
 
