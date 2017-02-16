@@ -118,5 +118,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "AccountTrigger.trigger": {
+        "id": "01q41000001Bu0BAAS",
+        "name": "AccountTrigger",
+        "createdDate": "2017-02-15T23:49:12.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-16T00:51:15.000+0000",
+        "fullName": "AccountTrigger",
+        "fileName": "unpackaged/triggers/AccountTrigger.trigger",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
     }
 }
