@@ -99,7 +99,6 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-
     "Day4Example1.cls": {
         "id": "01p4100000H7YppAAF",
         "name": "Day4Example1",
@@ -110,14 +109,12 @@
         "lastModifiedDate": "2017-02-14T23:13:13.000+0000",
         "fullName": "Day4Example1",
         "fileName": "unpackaged/classes/Day4Example1.cls",
-
         "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
     },
-
     "Day4Example2.cls": {
         "id": "01p4100000Hf8wmAAB",
         "name": "Day4Example2",
@@ -128,13 +125,11 @@
         "lastModifiedDate": "2017-02-15T00:45:36.000+0000",
         "fullName": "Day4Example2",
         "fileName": "unpackaged/classes/Day4Example2.cls",
-
         "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
-
     },
     "Day5Example1.cls": {
         "id": "01p4100000HfL2FAAV",
@@ -167,6 +162,51 @@
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
         "mmState": "clean"
-
+    },
+    "Day6Example1.cls": {
+        "id": "01p4100000HfWwaAAF",
+        "name": "Day6Example1",
+        "createdDate": "2017-02-16T22:40:40.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-16T23:55:55.000+0000",
+        "fullName": "Day6Example1",
+        "fileName": "unpackaged/classes/Day6Example1.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Person.cls": {
+        "id": "01p4100000HfX3HAAV",
+        "name": "Person",
+        "createdDate": "2017-02-16T22:44:23.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-16T23:55:41.000+0000",
+        "fullName": "Person",
+        "fileName": "unpackaged/classes/Person.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day6AssignmentTrigger.trigger": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-16T23:54:05.000Z",
+        "fileName": "unpackaged/triggers/Day6AssignmentTrigger.trigger",
+        "fullName": "Day6AssignmentTrigger",
+        "id": "01q41000001BvPYAA0",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-16T23:54:05.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
     }
 }
