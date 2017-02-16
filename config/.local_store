@@ -1,18 +1,4 @@
 {
-    "StringArrayTest.cls": {
-        "createdById": "00541000002Jj4IAAS",
-        "createdByName": "Sarah Beccari",
-        "createdDate": "2017-01-23T20:36:34.000Z",
-        "fileName": "unpackaged/classes/StringArrayTest.cls",
-        "fullName": "StringArrayTest",
-        "id": "01p4100000GCS5WAAX",
-        "lastModifiedById": "00541000002Jj4IAAS",
-        "lastModifiedByName": "Sarah Beccari",
-        "lastModifiedDate": "2017-01-23T20:46:38.000Z",
-        "manageableState": "unmanaged",
-        "type": "ApexClass",
-        "mmState": "clean"
-    },
     "Day2Emample2.cls": {
         "createdById": "00541000002Jj4IAAS",
         "createdByName": "Sarah Beccari",
@@ -23,6 +9,20 @@
         "lastModifiedById": "00541000002Jj4IAAS",
         "lastModifiedByName": "Sarah Beccari",
         "lastModifiedDate": "2017-02-08T23:13:24.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "StringArrayTest.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-01-23T20:36:34.000Z",
+        "fileName": "unpackaged/classes/StringArrayTest.cls",
+        "fullName": "StringArrayTest",
+        "id": "01p4100000GCS5WAAX",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-01-23T20:46:38.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -41,18 +41,46 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
-    "Day2Emample3.cls": {
-        "id": "01p4100000H6jPiAAJ",
-        "name": "Day2Emample3",
-        "createdDate": "2017-02-08T23:15:56.000+0000",
+    "Day3Example2.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-09T23:44:24.000Z",
+        "fileName": "unpackaged/classes/Day3Example2.cls",
+        "fullName": "Day3Example2",
+        "id": "01p4100000H6xdrAAB",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-10T00:00:00.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "BonusAssignment.cls": {
+        "id": "01p4100000H7B91AAF",
+        "name": "BonusAssignment",
+        "createdDate": "2017-02-10T20:14:10.000+0000",
         "createdById": "00541000002Jj4IAAS",
         "namespacePrefix": null,
         "lastModifiedById": "00541000002Jj4IAAS",
-        "lastModifiedDate": "2017-02-09T00:19:30.000+0000",
-        "fullName": "Day2Emample3",
-        "fileName": "unpackaged/classes/Day2Emample3.cls",
+        "lastModifiedDate": "2017-02-10T20:45:53.000+0000",
+        "fullName": "BonusAssignment",
+        "fileName": "unpackaged/classes/BonusAssignment.cls",
         "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day2Emample3.cls": {
+        "createdById": "00541000002Jj4IAAS",
+        "createdByName": "Sarah Beccari",
+        "createdDate": "2017-02-08T23:15:56.000Z",
+        "fileName": "unpackaged/classes/Day2Emample3.cls",
+        "fullName": "Day2Emample3",
+        "id": "01p4100000H6jPiAAJ",
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedByName": "Sarah Beccari",
+        "lastModifiedDate": "2017-02-09T00:56:38.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
@@ -71,6 +99,7 @@
         "type": "ApexClass",
         "mmState": "clean"
     },
+
     "Day4Example1.cls": {
         "id": "01p4100000H7YppAAF",
         "name": "Day4Example1",
@@ -81,12 +110,14 @@
         "lastModifiedDate": "2017-02-14T23:13:13.000+0000",
         "fullName": "Day4Example1",
         "fileName": "unpackaged/classes/Day4Example1.cls",
+
         "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
     },
+
     "Day4Example2.cls": {
         "id": "01p4100000Hf8wmAAB",
         "name": "Day4Example2",
@@ -97,11 +128,13 @@
         "lastModifiedDate": "2017-02-15T00:45:36.000+0000",
         "fullName": "Day4Example2",
         "fileName": "unpackaged/classes/Day4Example2.cls",
+
         "createdByName": "Sarah Beccari",
         "lastModifiedByName": "Sarah Beccari",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+
     },
     "Day5Example1.cls": {
         "id": "01p4100000HfL2FAAV",
@@ -134,5 +167,6 @@
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
         "mmState": "clean"
+
     }
 }
