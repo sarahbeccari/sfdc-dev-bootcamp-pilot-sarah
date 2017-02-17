@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"creat",
+				"createOpportunityForAccount"
+			],
+			[
+				"numer",
+				"numberOppty"
+			],
+			[
+				"Op",
+				"Opportunities"
+			],
+			[
 				"new",
 				"newCount"
 			],
@@ -91,7 +103,16 @@
 			"file": "src/classes/Week2AssignmentTriggerHelper.cls",
 			"settings":
 			{
-				"buffer_size": 6265,
+				"buffer_size": 6956,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/classes/Day3Assingment1.cls",
+			"settings":
+			{
+				"buffer_size": 2586,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -150,6 +171,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day6Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Person.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/Day6AssignmentTrigger.trigger",
@@ -159,7 +181,6 @@
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Emample3.cls",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Assingment1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/BonusAssignment.cls",
@@ -183,6 +204,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"plan Inst",
+			"account No",
 			"!quote.",
 			"!",
 			"my",
@@ -218,15 +241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6265,
+						"buffer_size": 6956,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3772,
-								3772
+								3711,
+								3711
 							]
 						],
 						"settings":
@@ -234,7 +257,7 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1794.0,
+						"translation.y": 1863.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -242,6 +265,35 @@
 				},
 				{
 					"buffer": 1,
+					"file": "src/classes/Day3Assingment1.cls",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 621.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "src/triggers/ContactWeek2AssignmentTrigger.trigger",
 					"semi_transient": false,
 					"settings":
@@ -253,8 +305,8 @@
 						"selection":
 						[
 							[
-								269,
-								269
+								271,
+								271
 							]
 						],
 						"settings":
@@ -265,7 +317,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

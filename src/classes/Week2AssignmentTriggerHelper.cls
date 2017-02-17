@@ -104,13 +104,36 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 				Integer newCount = account.Contacts.size();
 
+				Integer numberOppty = account.Opportunities.size();
+
 				account.Current_Number_of_Contacts__c = newCount;
 
+				// create oppty here (if # of contacts > 5)
 
-				//create note here
-				// create oppty here
+				if(newCount>4 && numberOppty ==0){
+
+					//create oppty
+					createOpportunityForAccount(account);
+
+
+
+
+				}
+
+				if(previousCount != newCount){
+
+					//create note
+
+					createNoteForAccount(account, previousCount, newCount);
+
+
+
+				}
+
+				update account;
 
 			}
+
 			
 
 
@@ -159,7 +182,8 @@ public with sharing class Week2AssignmentTriggerHelper {
 	
 
 		List<Account> accounts = [SELECT Id, Name, Current_Number_of_Contacts__C,
-										(SELECT Id FROM Contacts)
+										(SELECT Id FROM Contacts),
+										(SELECT Id FROM Opportunities)
  									FROM Account
  									WHERE Id IN :accountIds];
 
@@ -180,8 +204,20 @@ public with sharing class Week2AssignmentTriggerHelper {
 	 * @param  oldCount      [description]
 	 * @return               [description]
 	 */
-	private static Note createNoteForAccount(Account acct, Integer previousCount, Integer oldCount) {
+
+	 //changed to public!!! 
+	public static Note createNoteForAccount(Account acct, Integer previousCount, Integer oldCount) {
 		Note note = new Note();
+
+		note.ParentId = acct.Id;
+
+		note.Title = 'Summary of contacts';
+
+		note.Body = 'previousCount: '+previousCount + '  oldCount: '+ oldCount;
+
+		insert note;
+
+
 
 		// Your code here - Create a new note record with relevant information and return it
 
@@ -198,7 +234,13 @@ public with sharing class Week2AssignmentTriggerHelper {
 	private static Opportunity createOpportunityForAccount(Account acct) {
 		Opportunity opp = new Opportunity();
 
+		opp.AccountId = acct.Id;
+		opp.Name = '5+ Contacts Oppty';
+		opp.CloseDate = Date.today()+30;
+		opp.StageName = 'Prospecting';
+
 		// Your code here - Create a new opportunity and return it
+		insert opp;
 
 		return opp;
 	}
