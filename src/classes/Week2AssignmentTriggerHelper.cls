@@ -153,7 +153,9 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 	/////// TODO: Figure these out on your own
 
-	public static void calculateChangesOnUpdate(List<Contact> newContacts) {
+	public static void calculateChangesOnUpdate(List<Contact> newContacts, Map<Id, Contact> oldContactsMap) {
+
+		Set<Id> accountIds = new Set<Id>();
 
 //When a contact is updated, if an acconutId is changed: 
 //OLD (if applicable) AND NEW Account should update Current_Number_Of_Contacts__c 
@@ -162,13 +164,25 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 
 //need to determine old and new??
-		for(Contact contact : newContacts){
+		for(Contact newContact : newContacts){
 
-			if(contact.AccountId != null){
+			Contact oldContact = oldContactsMap.get(newContact.Id);
 
-				//add ids to list for contact avvu
+			Boolean accountIdChanged = newContact.AccountId == oldContact.AccountId; //== is compare and returns Boolean value
+
+			if(accountIdChanged){
+
+				if(newContact.AccountId != null){
+					accountIds.add(newContact.AccountId);
+				}
+				if(oldContact.AccountId != null){
+					accountIds.add(oldContact.AccountId);
+				}
+
 			}
 		}
+		//query by list of acctIds
+		
 
 		
 
