@@ -5,8 +5,11 @@ trigger ContactWeek2AssignmentTrigger on Contact (before insert, before update, 
 		Week2AssignmentTriggerHelper.calculateChangesOnInsert(Trigger.new);
 
 
+	}
 
+	if(Trigger.isBefore && Trigger.isDelete){
 
+		Week2AssignmentTriggerHelper.calculateChangesOnDelete(Trigger.new);
 	}
 
 }

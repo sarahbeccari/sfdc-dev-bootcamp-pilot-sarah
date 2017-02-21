@@ -113,10 +113,7 @@ public with sharing class Week2AssignmentTriggerHelper {
 				if(newCount>4 && numberOppty ==0){
 
 					//create oppty
-					createOpportunityForAccount(account);
-
-
-
+					oppsToCreate.add(createOpportunityForAccount(account));
 
 				}
 
@@ -124,17 +121,17 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 					//create note
 
-					createNoteForAccount(account, previousCount, newCount);
-
-
+					notesToCreate.add(createNoteForAccount(account, previousCount, newCount));
 
 				}
 
-				update account;
+				accountsToUpdate.add(account);
 
 			}
 
-			
+			update accountsToUpdate;
+			insert oppsToCreate;
+			insert notesToCreate;
 
 
 		// Steps:
@@ -149,20 +146,78 @@ public with sharing class Week2AssignmentTriggerHelper {
 		// 		create a note for the account createNoteForAccount() add to notesToCreate
 		// 		determine if opp needs to be updated and create if needed createOpportunityForAccount() (add to oppsToCreate)
 		// Perform update on accounts and inserts on notes/opps as needed
-	}
+
+
+	} //end of calculateChangesOnInsert()
 
 
 	/////// TODO: Figure these out on your own
 
-	public static void calculateChangesOnUpdate(List<Contact> newContacts, Map<Id, Contact> oldContactMap) {
+	public static void calculateChangesOnUpdate(List<Contact> newContacts) {
 
 	}
 
-	public static void calculateChangesOnDelete(List<Contact> newContacts, Map<Id, Contact> oldContactMap) {
+	public static void calculateChangesOnDelete(List<Contact> deletedContacts) {
+
+		// Account ids, taken from contact records - make sure not to put null values in this
+		Set<Id> accountIds = new Set<Id>();
+		// Accounts that need to be udpated - add accounts to this list to call update on all at once
+		List<Account> accountsToUpdate = new List<Account>();
+		List<Note> notesToCreate = new List<Note>();
+
+
+		for(Contact contact : deletedContacts){
+
+			if(contact.AccountId == null){ //how to reference the contact if there is no acct id???
+
+				accountIds.add(contact.AccountId);
+				System.debug ('contact acct id = null');
+
+			}
+		}
+
+			List<Account> accountContactCount = queryAccountsByIds(accountIds);
+
+
+			for(Account account : accountContactCount){
+
+				Integer previousCount = Integer.valueOf(account.Current_Number_of_Contacts__c);
+
+				if(previousCount == null){
+					previousCount =0;
+				}
+
+				Integer newCount = account.Contacts.size();
+
+	
+
+				account.Current_Number_of_Contacts__c = newCount;
+
+
+				if(previousCount != newCount){
+
+					//create note
+
+					notesToCreate.add(createNoteForAccount(account, previousCount, newCount));
+
+				}
+
+				accountsToUpdate.add(account);
+
+			}
+
+			update accountsToUpdate;
+			insert notesToCreate;
+
+
+
 
 	}
 
-	public static void calculateChangesOnUndelete(List<Contact> newContacts, Map<Id, Contact> oldContactMap) {
+
+
+
+	public static void calculateChangesOnUndelete(List<Contact> newContacts) {
 
 	}
 
@@ -213,11 +268,7 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 		note.Title = 'Summary of contacts';
 
-		note.Body = 'previousCount: '+previousCount + '  oldCount: '+ oldCount;
-
-		insert note;
-
-
+		note.Body = 'Previous Count: '+previousCount + '\n New Count: '+ oldCount;
 
 		// Your code here - Create a new note record with relevant information and return it
 
@@ -240,7 +291,6 @@ public with sharing class Week2AssignmentTriggerHelper {
 		opp.StageName = 'Prospecting';
 
 		// Your code here - Create a new opportunity and return it
-		insert opp;
 
 		return opp;
 	}
