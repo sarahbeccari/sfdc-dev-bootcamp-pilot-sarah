@@ -208,5 +208,37 @@
         "manageableState": "unmanaged",
         "type": "ApexTrigger",
         "mmState": "clean"
+    },
+    "Week2AssignmentTriggerHelper.cls": {
+        "id": "01p4100000HfYxzAAF",
+        "name": "Week2AssignmentTriggerHelper",
+        "createdDate": "2017-02-17T00:03:37.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-21T23:39:11.000+0000",
+        "fullName": "Week2AssignmentTriggerHelper",
+        "fileName": "unpackaged/classes/Week2AssignmentTriggerHelper.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "ContactWeek2AssignmentTrigger.trigger": {
+        "id": "01q41000001BvPdAAK",
+        "name": "ContactWeek2AssignmentTrigger",
+        "createdDate": "2017-02-17T00:16:05.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-02-21T23:39:03.000+0000",
+        "fullName": "ContactWeek2AssignmentTrigger",
+        "fileName": "unpackaged/triggers/ContactWeek2AssignmentTrigger.trigger",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
     }
 }
