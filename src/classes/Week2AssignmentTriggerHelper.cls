@@ -130,7 +130,7 @@ public with sharing class Week2AssignmentTriggerHelper {
 			}
 
 			update accountsToUpdate;
-			insert oppsToCreate;
+			insert oppsToCreate;   
 			insert notesToCreate;
 
 
@@ -155,25 +155,46 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 	public static void calculateChangesOnUpdate(List<Contact> newContacts) {
 
+//When a contact is updated, if an acconutId is changed: 
+//OLD (if applicable) AND NEW Account should update Current_Number_Of_Contacts__c 
+//A note should be created on the OLD (if applicable) and NEW account with the previous and the current count 
+//If the count is >= 5 on the NEW account, create a new opportunity for the account if one does not already exist
+
+
+//need to determine old and new??
+		for(Contact contact : newContacts){
+
+			if(contact.AccountId != null){
+
+				//add ids to list for contact avvu
+			}
+		}
+
+		
+
+
+
 	}
+
+
+	
 
 	public static void calculateChangesOnDelete(List<Contact> deletedContacts) {
 
-		// Account ids, taken from contact records - make sure not to put null values in this
 		Set<Id> accountIds = new Set<Id>();
-		// Accounts that need to be udpated - add accounts to this list to call update on all at once
 		List<Account> accountsToUpdate = new List<Account>();
 		List<Note> notesToCreate = new List<Note>();
 
+		//need to get the old account id for the contact that was deleted
+		// then query those accounts by ID
+		//  then update each account returned from ID
 
 		for(Contact contact : deletedContacts){
 
-			if(contact.AccountId == null){ //how to reference the contact if there is no acct id???
 
 				accountIds.add(contact.AccountId);
-				System.debug ('contact acct id = null');
-
-			}
+			
+			
 		}
 
 			List<Account> accountContactCount = queryAccountsByIds(accountIds);
@@ -188,16 +209,12 @@ public with sharing class Week2AssignmentTriggerHelper {
 				}
 
 				Integer newCount = account.Contacts.size();
-
-	
-
 				account.Current_Number_of_Contacts__c = newCount;
 
 
 				if(previousCount != newCount){
 
 					//create note
-
 					notesToCreate.add(createNoteForAccount(account, previousCount, newCount));
 
 				}
@@ -218,6 +235,59 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 
 	public static void calculateChangesOnUndelete(List<Contact> newContacts) {
+
+//When a contact is undeleted AND if the accountId is specified 
+//Account should update Current_Number_Of_Contacts__c 
+//Note should be created for the account specifying the old and the new counts 
+//If this brings the contact count >= 5 and no opportunity exists, one should be created
+
+
+
+		Set<Id> accountIds = new Set<Id>();
+		List<Account> accountsToUpdate = new List<Account>();
+		List<Note> notesToCreate = new List<Note>();
+
+		//need to get the old account id for the contact that was deleted
+		// then query those accounts by ID
+		//  then update each account returned from ID
+
+		for(Contact contact : newContacts){
+
+				accountIds.add(contact.AccountId);
+			
+			
+		}
+
+			List<Account> accountContactCount = queryAccountsByIds(accountIds);
+
+
+			for(Account account : accountContactCount){
+
+				Integer previousCount = Integer.valueOf(account.Current_Number_of_Contacts__c);
+
+				if(previousCount == null){
+					previousCount =0;
+				}
+
+				Integer newCount = account.Contacts.size();
+				account.Current_Number_of_Contacts__c = newCount;
+
+
+				if(previousCount != newCount){
+
+					//create note
+
+					notesToCreate.add(createNoteForAccount(account, previousCount, newCount));
+
+				}
+
+				accountsToUpdate.add(account);
+
+			}
+
+			update accountsToUpdate;
+			insert notesToCreate;
+
 
 	}
 
@@ -260,8 +330,8 @@ public with sharing class Week2AssignmentTriggerHelper {
 	 * @return               [description]
 	 */
 
-	 //changed to public!!! 
-	public static Note createNoteForAccount(Account acct, Integer previousCount, Integer oldCount) {
+	 
+	private static Note createNoteForAccount(Account acct, Integer previousCount, Integer oldCount) {
 		Note note = new Note();
 
 		note.ParentId = acct.Id;
@@ -291,7 +361,6 @@ public with sharing class Week2AssignmentTriggerHelper {
 		opp.StageName = 'Prospecting';
 
 		// Your code here - Create a new opportunity and return it
-
 		return opp;
 	}
 

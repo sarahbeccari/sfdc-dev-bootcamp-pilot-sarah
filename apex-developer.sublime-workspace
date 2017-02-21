@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"is",
+				"isDelete"
+			],
+			[
 				"notes",
 				"notesToCreate"
 			],
@@ -46,10 +50,6 @@
 			[
 				"qu",
 				"queryAccountsByIds"
-			],
-			[
-				"is",
-				"isAfter"
 			],
 			[
 				"print",
@@ -115,7 +115,7 @@
 			"file": "src/classes/Week2AssignmentTriggerHelper.cls",
 			"settings":
 			{
-				"buffer_size": 8171,
+				"buffer_size": 8137,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -174,6 +174,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls-meta.xml",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Assingment1.cls",
@@ -185,7 +187,6 @@
 		"/C/Users/BeccariSarah/Documents/apex-developer/.gitignore",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/AccountTrigger.trigger",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day5Example1.cls",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Emample3.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/BonusAssignment.cls",
@@ -208,6 +209,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
 			"');\n",
 			"plan Inst",
 			"account No",
@@ -246,15 +248,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8171,
+						"buffer_size": 8137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5437,
-								5437
+								4993,
+								4993
 							]
 						],
 						"settings":
@@ -262,7 +264,7 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3864.0,
+						"translation.y": 3450.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -281,8 +283,8 @@
 						"selection":
 						[
 							[
-								295,
-								295
+								394,
+								394
 							]
 						],
 						"settings":
