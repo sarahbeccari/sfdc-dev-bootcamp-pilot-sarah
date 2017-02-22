@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"accountIds"
+			],
+			[
 				"e",
 				"EMPLOYEE_ID_NUMBER"
 			],
@@ -127,33 +131,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/classes/Employer.cls",
-			"settings":
-			{
-				"buffer_size": 1336,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/Employee.cls",
-			"settings":
-			{
-				"buffer_size": 661,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/Day7Example1.cls",
-			"settings":
-			{
-				"buffer_size": 810,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -195,12 +172,16 @@
 		"/C/Users/BeccariSarah/Documents/apex-developer",
 		"/C/Users/BeccariSarah/Documents/apex-developer/config",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes"
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers"
 	],
 	"file_history":
 	[
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Week2AssignmentTriggerHelper.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/ContactWeek2AssignmentTrigger.trigger",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Week2AssignmentTriggerHelper.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day7Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employee.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employer.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls-meta.xml",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
@@ -267,93 +248,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/classes/Employer.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1336,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								446,
-								446
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/classes/Employee.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								602,
-								602
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 288.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/classes/Day7Example1.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								801,
-								801
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 192.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -438,7 +334,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 386.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

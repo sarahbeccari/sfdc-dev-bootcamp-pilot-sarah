@@ -45,8 +45,8 @@ public with sharing class Employer { //object
 		return 'Employer: '+name+ ' at location: '+ locationNumber + ' Number of Employers: ' + numberOfEmployers;
 	}
 
-	public static String staticMethod(){ //beyond the scope of only one Employer, 
-										//because it is static
+	public static String staticMethod(){ //beyond the scope of only one Employer, applicable to entire class 
+										//because it is static, use on entire class by calling Employer.staticMethod()
 
 
 

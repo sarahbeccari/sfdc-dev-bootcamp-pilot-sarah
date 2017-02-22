@@ -182,6 +182,9 @@ public with sharing class Week2AssignmentTriggerHelper {
 			}
 		}
 		//query by list of acctIds
+		List<Account> accountsList = queryAccountsByIds(accountIds);
+
+		
 		
 
 		
