@@ -4,20 +4,88 @@
 		"selected_items":
 		[
 			[
-				"acc",
+				"e",
+				"EMPLOYEE_ID_NUMBER"
+			],
+			[
+				"accountId",
 				"accountIds"
+			],
+			[
+				"new",
+				"newContact"
+			],
+			[
+				"get",
+				"PUBLIC get(ANY key) \tString"
+			],
+			[
+				"oldContactM",
+				"oldContactsMap"
+			],
+			[
+				"old",
+				"oldContact"
+			],
+			[
+				"is",
+				"isDelete"
+			],
+			[
+				"notes",
+				"notesToCreate"
+			],
+			[
+				"oppt",
+				"oppsToCreate"
+			],
+			[
+				"accounts",
+				"accountsToUpdate"
+			],
+			[
+				"creat",
+				"createOpportunityForAccount"
+			],
+			[
+				"numer",
+				"numberOppty"
+			],
+			[
+				"Op",
+				"Opportunities"
+			],
+			[
+				"previ",
+				"previousCount"
+			],
+			[
+				"account",
+				"accountContactCount"
+			],
+			[
+				"acc",
+				"accountContactCount"
+			],
+			[
+				"qu",
+				"queryAccountsByIds"
+			],
+			[
+				"print",
+				"printedPerson"
+			],
+			[
+				"ret",
+				"returnString"
+			],
+			[
+				"re",
+				"returnString"
 			],
 			[
 				"Account",
 				"AccountNumber"
-			],
-			[
-				"is",
-				"isBefore"
-			],
-			[
-				"old",
-				"oldMap"
 			],
 			[
 				"Con",
@@ -52,11 +120,6 @@
 				"todaysDate"
 			],
 			[
-				"new",
-				"newContact"
-			],
-			[
-
 				"j",
 				"joinExample"
 			]
@@ -65,35 +128,28 @@
 	"buffers":
 	[
 		{
-			"file": "src/classes/Day4Example1.cls",
+			"file": "src/classes/Employer.cls",
 			"settings":
 			{
-				"buffer_size": 2764,
-
+				"buffer_size": 1336,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-
-			"contents": "public with sharing class Day5Example1 {\n\n\n\tpublic static void createBeer(){\n\n\t\tBeer__c myBeer = new Beer__c(Name = 'Double Haul IPA',Kind__C = 'IPA');\n\n\t\tupsert myBeer;\n\n\n\t\tList<Contact> myContacts = [SELECT Id, Favorite_Beer__c\n\t\t\t\t\t\t\t\t\tFROM Contact\n\t\t\t\t\t\t\t\t\tLIMIT 10];\n\n\n\n\t\tfor(Contact currentContact : myContacts){\n\n\n\t\t\tcurrentContact.Favorite_Beer__C = myBeer.Id;\n\n\t\t}\n\n\t\tupdate myContacts;\n\n\n\t}\n\n\tpublic static void queryParent(){\n\n\n\t\tList<Contact> contacts = [SELECT Id, Favorite_Beer__c, Favorite_Beer__r.Name, \n\t\t\t\t\t\t\t\t\t\tFavorite_Beer__r.Id, OwnerId, Favorite_Beer__r.Owner.Name, Owner.UserName\n\t\t\t\t\t\t\t\tFROM Contact \n\t\t\t\t\t\t\t\tWHERE Favorite_Beer__c != null\n\t\t\t\t\t\t\t\tLIMIT 10];\n\n\n\n\n\t\tfor(Contact currentContact : contacts){\n\n\n\t\t\tBeer__c beer = currentContact.Favorite_Beer__r;\n\n\t\t\tString beerName = currentContact.Favorite_Beer__r.Name;\n\n\t\t\tSystem.debug('contact: '+ currentContact);\n\t\t\tSystem.debug('beer: '+ beer);\n\t\t\tSystem.debug('beerName: '+ beerName);\n\n\t\t}\n\n\n\t}\n\n\n\tpublic static void queryChild(){\n\n\n\t\tBeer__c doubleHaul = [SELECT Id, Name, Kind__c,\n    \t\t\t\t\t\t\t(SELECT Id, Name, Favorite_Beer__c \n    \t\t\t\t\t\t\t\tFROM Contacts__r)\n\t\t\t\t\t\t\tFROM Beer__c\n\t\t\t\t\t\t\tWHERE Id = 'a0041000007MIjGAAW'];\n\n\n\n\t\tSystem.debug('doubleHaul: '+ doubleHaul);\n\t\tList<Contact> contacts = doubleHaul.Contacts__r;\n\n\t\tfor(Contact contact : contacts){\n\n\n\t\t\tSystem.debug('Contact: '+ contact);\n\n\t\t}\n\n\n\n\n\n\n\n\n\t}\n\n\n}",
-			"file": "src/classes/Day5Example1.cls",
-			"file_size": 1393,
-			"file_write_time": 131316746776190325,
+			"file": "src/classes/Employee.cls",
 			"settings":
 			{
-				"buffer_size": 1394,
+				"buffer_size": 661,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-
-			"file": "src/triggers/AccountTrigger.trigger",
+			"file": "src/classes/Day7Example1.cls",
 			"settings":
 			{
-				"buffer_size": 1736,
-
+				"buffer_size": 810,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -143,20 +199,30 @@
 	],
 	"file_history":
 	[
-
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Week2AssignmentTriggerHelper.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/ContactWeek2AssignmentTrigger.trigger",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Emample3.cls",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Example1.cls",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls-meta.xml",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Assingment1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls-meta.xml",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day6Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Person.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/Day6AssignmentTrigger.trigger",
+		"/C/Users/BeccariSarah/Documents/apex-developer/.gitignore",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/AccountTrigger.trigger",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day5Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Emample3.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/BonusAssignment.cls",
 		"/C/Users/BeccariSarah/Downloads/Template Content 2017-1-10 7.57.10.csv",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day2Emample2.cls"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -170,6 +236,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mcDonalds",
+			" ",
+			"');\n",
+			"plan Inst",
+			"account No",
 			"!quote.",
 			"!",
 			"my",
@@ -196,28 +267,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
-
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/classes/Day4Example1.cls",
+					"file": "src/classes/Employer.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2764,
-
+						"buffer_size": 1336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-
-								408,
-								408
-
+								446,
+								446
 							]
 						],
 						"settings":
@@ -225,32 +292,27 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-
-						"translation.y": 1035.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-
-					"file": "src/classes/Day5Example1.cls",
+					"file": "src/classes/Employee.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1394,
-
+						"buffer_size": 661,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								973,
-								973
-
+								602,
+								602
 							]
 						],
 						"settings":
@@ -258,32 +320,27 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-
-						"translation.y": 991.0,
+						"translation.y": 288.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/triggers/AccountTrigger.trigger",
+					"file": "src/classes/Day7Example1.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1736,
-
+						"buffer_size": 810,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-
-								1640,
-								1640
-
+								801,
+								801
 							]
 						],
 						"settings":
@@ -291,12 +348,10 @@
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
 						},
 						"translation.x": 0.0,
-
-						"translation.y": 690.0,
-
+						"translation.y": 192.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -304,7 +359,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -345,7 +400,7 @@
 	"project": "apex-developer.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -383,7 +438,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
