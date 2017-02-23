@@ -18,10 +18,12 @@ trigger ContactWeek2AssignmentTrigger on Contact (before insert, before update, 
 		//oldMap: returns key of Map, here is the Contact ID
 	}
 
+
 	if(Trigger.isUndelete && Trigger.isAfter){
 
 		Week2AssignmentTriggerHelper.calculateChangesOnUndelete(Trigger.new);
 		//oldMap: returns key of Map, here is the Contact ID
 	}
+
 
 }

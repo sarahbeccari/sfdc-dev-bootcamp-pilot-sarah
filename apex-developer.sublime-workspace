@@ -26,6 +26,7 @@
 			[
 				"oldContactM",
 				"oldContactsMap"
+
 			],
 			[
 				"old",
@@ -136,6 +137,7 @@
 			"settings":
 			{
 				"buffer_size": 10220,
+
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -186,11 +188,13 @@
 	],
 	"file_history":
 	[
+
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/ContactWeek2AssignmentTrigger.trigger",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Week2AssignmentTriggerHelper.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day7Example1.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employee.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employer.cls",
+
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls-meta.xml",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
@@ -226,7 +230,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+
 			"mcDonalds",
+
 			" ",
 			"');\n",
 			"plan Inst",
@@ -263,18 +269,22 @@
 				{
 					"buffer": 0,
 					"file": "src/classes/Week2AssignmentTriggerHelper.cls",
+
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 10220,
+
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+
 								0,
 								0
+
 							]
 						],
 						"settings":
@@ -286,7 +296,9 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+
 					"stack_index": 0,
+
 					"type": "text"
 				}
 			]
@@ -373,7 +385,9 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
+
 	"side_bar_width": 386.0,
+
 	"status_bar_visible": true,
 	"template_settings":
 	{
