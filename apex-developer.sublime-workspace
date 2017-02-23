@@ -4,6 +4,35 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"accountIds"
+			],
+			[
+				"e",
+				"EMPLOYEE_ID_NUMBER"
+			],
+			[
+				"accountId",
+				"accountIds"
+			],
+			[
+				"new",
+				"newContact"
+			],
+			[
+				"get",
+				"PUBLIC get(ANY key) \tString"
+			],
+			[
+				"oldContactM",
+				"oldContactsMap"
+
+			],
+			[
+				"old",
+				"oldContact"
+			],
+			[
 				"is",
 				"isDelete"
 			],
@@ -30,10 +59,6 @@
 			[
 				"Op",
 				"Opportunities"
-			],
-			[
-				"new",
-				"newCount"
 			],
 			[
 				"previ",
@@ -66,10 +91,6 @@
 			[
 				"Account",
 				"AccountNumber"
-			],
-			[
-				"old",
-				"oldMap"
 			],
 			[
 				"Con",
@@ -115,16 +136,8 @@
 			"file": "src/classes/Week2AssignmentTriggerHelper.cls",
 			"settings":
 			{
-				"buffer_size": 8137,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/triggers/ContactWeek2AssignmentTrigger.trigger",
-			"settings":
-			{
-				"buffer_size": 394,
+				"buffer_size": 10220,
+
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -170,10 +183,18 @@
 		"/C/Users/BeccariSarah/Documents/apex-developer",
 		"/C/Users/BeccariSarah/Documents/apex-developer/config",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src",
-		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes"
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers"
 	],
 	"file_history":
 	[
+
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/triggers/ContactWeek2AssignmentTrigger.trigger",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Week2AssignmentTriggerHelper.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day7Example1.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employee.cls",
+		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Employer.cls",
+
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day4Example2.cls-meta.xml",
 		"/C/Users/BeccariSarah/Documents/apex-developer/src/classes/Day3Example2.cls",
@@ -195,7 +216,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -209,6 +230,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+
+			"mcDonalds",
+
 			" ",
 			"');\n",
 			"plan Inst",
@@ -245,57 +269,36 @@
 				{
 					"buffer": 0,
 					"file": "src/classes/Week2AssignmentTriggerHelper.cls",
+
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8137,
+						"buffer_size": 10220,
+
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4993,
-								4993
+
+								0,
+								0
+
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/triggers/ContactWeek2AssignmentTrigger.trigger",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 394,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								394,
-								394
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+
+					"stack_index": 0,
+
 					"type": "text"
 				}
 			]
@@ -303,7 +306,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 40.0
 	},
 	"input":
 	{
@@ -344,7 +347,7 @@
 	"project": "apex-developer.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -382,7 +385,9 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 414.0,
+
+	"side_bar_width": 386.0,
+
 	"status_bar_visible": true,
 	"template_settings":
 	{
