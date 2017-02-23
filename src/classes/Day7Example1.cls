@@ -41,7 +41,7 @@ public with sharing class Day7Example1 {
 		List<Employee> newHireEmployees = new List<Employee>();
 
 
-		newHireEmployees.add(new Employee('Joseph', 'Daniel Desch', Date.newInstance(2017, 02, 27)));
+		newHireEmployees.add(new Employee('Joseph', 'Desch', Date.newInstance(2017, 02, 27)));
 		newHireEmployees.add(new Employee('Jack', 'Jackson', Date.newInstance(2017, 02, 27)));
 
 		atg.addEmployee(newHireEmployees);

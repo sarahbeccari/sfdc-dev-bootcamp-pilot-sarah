@@ -17,14 +17,14 @@ public with sharing class Employee {
 		
 
 		this.EMPLOYEE_ID_NUMBER = previousEmployeeNumber +1;
-		previousEmployeeNumber = previousEmployeeNumber +1;
+		previousEmployeeNumber += 1; //ask about previousEmployeeNumber++;
 		this.firstName =firstName;
 		this.lastName =lastName;
 		this.hireDate =hireDate;
 		//this.terminationDate = terminationDate;
 
-		System.debug('Calling full constructor'+ 'Employee number: '+ EMPLOYEE_ID_NUMBER);
-		System.debug('Calling full constructor'+ 'Previous Employee number: '+ previousEmployeeNumber);
+		System.debug('Calling full constructor -- Employee number: '+ EMPLOYEE_ID_NUMBER);
+		System.debug('Calling full constructor -- Previous Employee number: '+ previousEmployeeNumber);
 
 
 
@@ -49,7 +49,7 @@ public with sharing class Employee {
 	public void printEmployee(){
 
 		System.debug('First Name: ' +firstName);
-		System.debug('Lastt Name: ' +lastName);
+		System.debug('Last Name: ' +lastName);
 		System.debug('Hire Date: ' +hireDate);
 		System.debug('Employee number: '+ EMPLOYEE_ID_NUMBER);
 
