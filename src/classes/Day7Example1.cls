@@ -27,4 +27,115 @@ public with sharing class Day7Example1 {
 
 		
 	}
+
+	public static void createEmployerWithEmployees(){
+
+
+		Employer atg = new Employer('ATG', 'Missoula1234');
+
+		Employee sarah = new Employee('Sarah', 'Beccari');
+
+		atg.addEmployee(sarah);
+		atg.printEmployer();
+
+		List<Employee> newHireEmployees = new List<Employee>();
+
+
+		newHireEmployees.add(new Employee('Joseph', 'Daniel Desch', Date.newInstance(2017, 02, 27)));
+		newHireEmployees.add(new Employee('Jack', 'Jackson', Date.newInstance(2017, 02, 27)));
+
+		atg.addEmployee(newHireEmployees);
+		atg.printEmployer();
+
+		Employee employee2 = atg.getEmployeeById(2);
+		employee2.printEmployee();
+
+
+		atg.terminateEmployee(1);
+		atg.printEmployer();
+
+
+
+	}
+
+
+
+	public static void showErrorHandling(){
+
+
+		Employer atg = new Employer('ATG', 'Missoula1234');
+
+		Employee sarah = new Employee('Sarah', 'Beccari');
+
+		atg.addEmployee(sarah);
+		atg.printEmployer();
+
+		List<Employee> newHireEmployees = new List<Employee>();
+
+
+		newHireEmployees.add(new Employee('Joseph', 'Daniel Desch', Date.newInstance(2017, 02, 27)));
+		newHireEmployees.add(new Employee('Jack', 'Jackson', Date.newInstance(2017, 02, 27)));
+
+		atg.addEmployee(newHireEmployees);
+		atg.printEmployer();
+
+		Employee employee2 = atg.getEmployeeById(10);
+
+
+		/////////////////// begin error trapping /////////////////////////////////////////////
+
+		if(employee2 != null){
+
+			employee2.printEmployee();
+		}
+		else{
+			System.debug('Employee not found!!');
+		}
+
+
+		////////////////////////////////begin try ///////////////////////////////////////////
+
+
+		try{
+
+			employee2.printEmployee();
+
+
+		} catch(Exception ex){
+
+
+			System.debug ('Exception: '+ ex.getMessage());
+
+
+
+		} finally { // will always hit this
+
+			System.debug('We are in finally 1!');
+
+		}
+
+		//////////////////Execute try wihtout throwing error/////////////////////////////
+
+
+		try{
+
+			Employee employee3 = atg.getEmployeeById(3);
+
+			employee3.printEmployee();
+
+
+		} catch(Exception ex){
+
+
+			System.debug ('Exception: '+ ex.getMessage());
+
+
+
+		} finally { 
+
+			System.debug('We are in finally 2!');
+
+		}
+
+	}
 }
