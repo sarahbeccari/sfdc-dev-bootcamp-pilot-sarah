@@ -4,7 +4,7 @@ public with sharing class Zoo {
 	String location;
 	Integer zooNumber;
 	Date openDate;
-	Date closeDate;
+	private Date closeDate;
 	List<Animal> zooAnimals = new List<Animal>();
 	List<Animal> historicAnimals = new List<Animal>();
 
@@ -104,7 +104,8 @@ public static void transferAnimal(Zoo currentZoo, Zoo newZoo, Animal animalToTra
 	//animalToTransfer.mostRecentTransfer= Datetime.now();
 	Boolean animalRemoved = false;
 
-	for(Integer i = 0; i< currentZoo.zooAnimals.size(); i++){ 
+	for(Integer i = 0; i< currentZoo.zooAnimals.size(); i++){ //will this work here? size differnt than index
+
 
 		Animal currentAnimal = currentZoo.zooAnimals.get(i);
 
@@ -114,12 +115,9 @@ public static void transferAnimal(Zoo currentZoo, Zoo newZoo, Animal animalToTra
 
 			 animalRemoved = true;
 			 break;
-
-
 	}
 
 }
-
 			if(animalRemoved){
 
 				currentZoo.historicAnimals.add(animalToTransfer);
@@ -140,11 +138,19 @@ public static void transferAnimal(Zoo currentZoo, Zoo newZoo, Animal animalToTra
 
 }
 
-public static void closeLoation(){
+public void closeLocation(Zoo closingZoo, Zoo transferAnimalsZoo){
+	
 
+		for(Integer i = 0; i< zooAnimals.size(); i++ ){
+
+			Animal currentAnimal = zooAnimals.get(i);
+
+			Zoo.transferAnimal(closingZoo, transferAnimalsZoo, currentAnimal);
+
+    		closeDate = Date.today();
 
 }
-
+}
 
 //transferAnimal() (should move animal from current to historic) 
 //NOTE: This must be a static method with the following parameters:  
