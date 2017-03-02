@@ -386,5 +386,21 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "DynamicSOQL.cls": {
+        "id": "01p4100000HhJPXAA3",
+        "name": "DynamicSOQL",
+        "createdDate": "2017-03-01T23:35:09.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-03-02T00:55:35.000+0000",
+        "fullName": "DynamicSOQL",
+        "fileName": "unpackaged/classes/DynamicSOQL.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
