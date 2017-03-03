@@ -402,5 +402,53 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "Day12RecordType.cls": {
+        "id": "01p4100000HhTJmAAN",
+        "name": "Day12RecordType",
+        "createdDate": "2017-03-02T23:37:55.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-03-03T00:02:17.000+0000",
+        "fullName": "Day12RecordType",
+        "fileName": "unpackaged/classes/Day12RecordType.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day12CustomSetting.cls": {
+        "id": "01p4100000HhTMMAA3",
+        "name": "Day12CustomSetting",
+        "createdDate": "2017-03-03T00:06:52.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-03-03T00:22:41.000+0000",
+        "fullName": "Day12CustomSetting",
+        "fileName": "unpackaged/classes/Day12CustomSetting.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    },
+    "Day12SOSL.cls": {
+        "id": "01p4100000HhUExAAN",
+        "name": "Day12SOSL",
+        "createdDate": "2017-03-03T00:43:26.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-03-03T01:01:39.000+0000",
+        "fullName": "Day12SOSL",
+        "fileName": "unpackaged/classes/Day12SOSL.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
