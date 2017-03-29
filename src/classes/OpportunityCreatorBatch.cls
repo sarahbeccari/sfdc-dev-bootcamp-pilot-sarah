@@ -1,10 +1,10 @@
-global class OpptyCreatorBatch implements Database.Batchable<sObject>, Database.Stateful {
+global class OpportunityCreatorBatch implements Database.Batchable<sObject>, Database.Stateful {
 	
 	String query = 'SELECT Id, Name FROM Account';
 	global Integer totalNumberOfOpps;
 
 
-	global OpptyCreatorBatch() {
+	global OpportunityCreatorBatch() {
 		totalNumberOfOpps = 0;
 	}
 	
@@ -35,9 +35,9 @@ global class OpptyCreatorBatch implements Database.Batchable<sObject>, Database.
 
 		Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
-		mail.setToAddresses(new String[]{'sarah.beccari@atginfo.com'});
-		mail.setReplyTo('sarah.beccari@atginfo.com');
-		mail.setSenderDisplayName('Sarah Beccari');
+		mail.setToAddresses(new String[]{'austin.turner@atginfo.com'});
+		mail.setReplyTo('austin.turner@atginfo.com');
+		mail.setSenderDisplayName('Austin Turner');
 		mail.setSubject('New Opportunities Created');
 		mail.setPlainTextBody('Hello!\n\nNumber of new opportunites created: ' + totalNumberOfOpps);
 		

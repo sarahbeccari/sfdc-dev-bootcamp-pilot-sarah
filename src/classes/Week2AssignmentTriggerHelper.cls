@@ -157,11 +157,9 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 		Set<Id> accountIds = new Set<Id>();
 
-
 		List<Account> accountsToUpdate = new List<Account>();
 		List<Opportunity> oppsToCreate = new List<Opportunity>();
 		List<Note> notesToCreate = new List<Note>();
-
 
 //When a contact is updated, if an acconutId is changed: 
 //OLD (if applicable) AND NEW Account should update Current_Number_Of_Contacts__c 
@@ -174,11 +172,9 @@ public with sharing class Week2AssignmentTriggerHelper {
 
 			Contact oldContact = oldContactsMap.get(newContact.Id);
 
-
 			Boolean accountIdChanged = newContact.AccountId != oldContact.AccountId; //== is compare and returns Boolean value
 
 			//true if account was changed 
-
 			if(accountIdChanged){
 
 				if(newContact.AccountId != null){
@@ -187,7 +183,6 @@ public with sharing class Week2AssignmentTriggerHelper {
 				if(oldContact.AccountId != null){
 					accountIds.add(oldContact.AccountId);
 				}
-
 
 			
 		}
@@ -223,7 +218,6 @@ public with sharing class Week2AssignmentTriggerHelper {
 			insert notesToCreate;
 
 }
-
 	
 
 	public static void calculateChangesOnDelete(List<Contact> deletedContacts) {
