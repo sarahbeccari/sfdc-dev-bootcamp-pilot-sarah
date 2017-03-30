@@ -35,9 +35,9 @@ global class OpportunityCreatorBatch implements Database.Batchable<sObject>, Dat
 
 		Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
 
-		mail.setToAddresses(new String[]{'austin.turner@atginfo.com'});
-		mail.setReplyTo('austin.turner@atginfo.com');
-		mail.setSenderDisplayName('Austin Turner');
+		mail.setToAddresses(new String[]{'sarah.beccari@atginfo.com'});
+		mail.setReplyTo('sarah.beccari@atginfo.com');
+		mail.setSenderDisplayName('Sarah Beccari');
 		mail.setSubject('New Opportunities Created');
 		mail.setPlainTextBody('Hello!\n\nNumber of new opportunites created: ' + totalNumberOfOpps);
 		
@@ -50,7 +50,8 @@ global class OpportunityCreatorBatch implements Database.Batchable<sObject>, Dat
 	private Opportunity createOpportunity(Account account) {
 
 		Date closeDate = Date.today().addMonths(1);
-		Opportunity newOpp = new Opportunity(Name=account.Name + ' New Opportunity', StageName='Prospecting', CloseDate=closeDate, AccountId=account.Id);
+		Opportunity newOpp = new Opportunity(Name=account.Name + ' New Opportunity', StageName='Prospecting', 
+											CloseDate=closeDate, AccountId=account.Id);
 		return newOpp;
 	}
 
