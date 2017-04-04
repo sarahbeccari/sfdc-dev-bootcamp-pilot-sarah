@@ -636,5 +636,37 @@
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"
+    },
+    "LeadToContactTrigger.trigger": {
+        "id": "01q41000001CWbMAAW",
+        "name": "LeadToContactTrigger",
+        "createdDate": "2017-04-03T23:00:30.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-04-03T23:05:24.000+0000",
+        "fullName": "LeadToContactTrigger",
+        "fileName": "unpackaged/triggers/LeadToContactTrigger.trigger",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexTrigger",
+        "mmState": "clean"
+    },
+    "LeadToContactHelper.cls": {
+        "id": "01p4100000IAmy3AAD",
+        "name": "LeadToContactHelper",
+        "createdDate": "2017-04-03T23:03:37.000+0000",
+        "createdById": "00541000002Jj4IAAS",
+        "namespacePrefix": null,
+        "lastModifiedById": "00541000002Jj4IAAS",
+        "lastModifiedDate": "2017-04-03T23:29:11.000+0000",
+        "fullName": "LeadToContactHelper",
+        "fileName": "unpackaged/classes/LeadToContactHelper.cls",
+        "createdByName": "Sarah Beccari",
+        "lastModifiedByName": "Sarah Beccari",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
     }
 }
