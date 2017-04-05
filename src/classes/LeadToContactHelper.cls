@@ -9,7 +9,7 @@ public with sharing class LeadToContactHelper {
 	public static void handleBeforeInsert(List<Lead> leads){
 
 		queryContactsByEmail(leads);
-		queryContactsByLastName(leads);
+		queryContactsByLastName(searchAgainLeads);
 
 	}
 
@@ -28,7 +28,7 @@ public with sharing class LeadToContactHelper {
 
 		//query all email addresses for Contacts
 		List<Contact> contacts = [SELECT Id, Name, Email 
-								 FROM Contact 
+								 FROM Contact
 								 WHERE Email IN: leadEmails];
 
 		Map<String, Contact> contactsMap = new Map<String, Contact>();
